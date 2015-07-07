@@ -11,6 +11,8 @@
 		<spring.version>3.2.13.RELEASE</spring.version>
 		<servlet.version>3.1.0</servlet.version>
 		<jstl.version>1.2</jstl.version>
+		<!-- AspectJ -->
+        <aspectj.version>1.8.6</aspectj.version>
 
 	</properties>
 	<dependencies>
@@ -63,7 +65,21 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-		    <!-- Spring AOP dependency -->
+		        
+		    <!-- AspectJ dependencies -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>${aspectj.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjtools</artifactId>
+            <version>${aspectj.version}</version>
+        </dependency>
+        
+        <!-- Spring AOP dependency -->
         <dependency>
     	        <groupId>cglib</groupId>
 		<artifactId>cglib</artifactId>
